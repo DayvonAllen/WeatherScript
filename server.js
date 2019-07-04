@@ -40,7 +40,6 @@ darksky
         weather = data
         temp = weather.currently.temperature;
         summary = weather.currently.summary
-        console.log(temp)
         res.send({"city": temp, "summary": summary});
 
     })
@@ -48,6 +47,5 @@ darksky
 
 app.listen(PORT, () => {
     console.log(`Now listening on port ${PORT}`)
-    console.log(process.env.DARKSKIES)
-    console.log(process.env.MAP)
+   
 })
